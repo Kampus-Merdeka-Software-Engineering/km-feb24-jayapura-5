@@ -42,8 +42,8 @@ nav ul li {
 nav ul li a {
     color: black;
     text-align: center;
-    padding: 5px 12px;
-    border-radius: 3px;
+    padding: 10px 12px;
+    border-radius: 23px;
     text-decoration: none;
     font-size: 17px;
 }
@@ -83,7 +83,7 @@ a:hover {
     justify-content: center;
     align-items: center;
     animation: change 20s infinite linear;
-    padding-top: 30px;
+    padding-top: 50px;
 }
 
 .content {
@@ -409,7 +409,6 @@ button:hover {
 
 .navbar a:hover,
 .dropdown:hover .dropbtn {
-    text-decoration: underline;
     background-color: #d2b356;
 }
 
@@ -478,11 +477,11 @@ button:hover {
 .dropdown-content a {
     color: black;
     padding: 12px 16px;
-    text-align: left;
     display: block;
     text-decoration: none;
     text-wrap: nowrap;
     line-height: 40px;
+    text-align: left;
 }
 
 .dropdown-content a:hover {
@@ -509,10 +508,9 @@ button:hover {
 
 /* Media Screen */
 
-@media (max-widht: 952px) { 
+@media (max-width: 952px) { 
     .logo img {
         font-size: 30px;
-        padding-left: 50px;
     }
 
     nav ul li a {
