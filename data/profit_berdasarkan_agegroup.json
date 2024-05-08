@@ -1,0 +1,17 @@
+[{
+  "Age_Group": "Adults (35-64)",
+  "total_orders": "56782",
+  "total_profit": "1272957"
+}, {
+  "Age_Group": "Young Adults (25-34)",
+  "total_orders": "49975",
+  "total_profit": "1242419"
+}, {
+  "Age_Group": "Youth (\u003c25)",
+  "total_orders": "20106",
+  "total_profit": "351131"
+}, {
+  "Age_Group": "Seniors (64+)",
+  "total_orders": "1009",
+  "total_profit": "5575"
+}]

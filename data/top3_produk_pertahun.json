@@ -1,0 +1,109 @@
+[{
+  "tahun": "2011",
+  "Product_Category": "Bikes",
+  "Product": "Road-150 Red, 44",
+  "total_order": "31",
+  "total_profit": "28447"
+}, {
+  "tahun": "2011",
+  "Product_Category": "Bikes",
+  "Product": "Road-150 Red, 62",
+  "total_order": "28",
+  "total_profit": "26948"
+}, {
+  "tahun": "2011",
+  "Product_Category": "Bikes",
+  "Product": "Road-150 Red, 48",
+  "total_order": "27",
+  "total_profit": "22605"
+}, {
+  "tahun": "2012",
+  "Product_Category": "Bikes",
+  "Product": "Road-150 Red, 48",
+  "total_order": "32",
+  "total_profit": "27781"
+}, {
+  "tahun": "2012",
+  "Product_Category": "Bikes",
+  "Product": "Road-150 Red, 62",
+  "total_order": "32",
+  "total_profit": "31286"
+}, {
+  "tahun": "2012",
+  "Product_Category": "Bikes",
+  "Product": "Road-150 Red, 44",
+  "total_order": "30",
+  "total_profit": "25540"
+}, {
+  "tahun": "2013",
+  "Product_Category": "Accessories",
+  "Product": "Patch Kit/8 Patches",
+  "total_order": "3732",
+  "total_profit": "2646"
+}, {
+  "tahun": "2013",
+  "Product_Category": "Accessories",
+  "Product": "Water Bottle - 30 oz.",
+  "total_order": "3146",
+  "total_profit": "7188"
+}, {
+  "tahun": "2013",
+  "Product_Category": "Clothing",
+  "Product": "AWC Logo Cap",
+  "total_order": "1537",
+  "total_profit": "1175"
+}, {
+  "tahun": "2014",
+  "Product_Category": "Accessories",
+  "Product": "Patch Kit/8 Patches",
+  "total_order": "4757",
+  "total_profit": "3408"
+}, {
+  "tahun": "2014",
+  "Product_Category": "Accessories",
+  "Product": "Water Bottle - 30 oz.",
+  "total_order": "4166",
+  "total_profit": "9569"
+}, {
+  "tahun": "2014",
+  "Product_Category": "Accessories",
+  "Product": "Touring Tire Tube",
+  "total_order": "2993",
+  "total_profit": "6809"
+}, {
+  "tahun": "2015",
+  "Product_Category": "Accessories",
+  "Product": "Patch Kit/8 Patches",
+  "total_order": "3625",
+  "total_profit": "2559"
+}, {
+  "tahun": "2015",
+  "Product_Category": "Accessories",
+  "Product": "Water Bottle - 30 oz.",
+  "total_order": "3124",
+  "total_profit": "7108"
+}, {
+  "tahun": "2015",
+  "Product_Category": "Clothing",
+  "Product": "AWC Logo Cap",
+  "total_order": "1485",
+  "total_profit": "1123"
+}, {
+  "tahun": "2016",
+  "Product_Category": "Accessories",
+  "Product": "Patch Kit/8 Patches",
+  "total_order": "4673",
+  "total_profit": "3342"
+}, {
+  "tahun": "2016",
+  "Product_Category": "Accessories",
+  "Product": "Water Bottle - 30 oz.",
+  "total_order": "4096",
+  "total_profit": "9415"
+}, {
+  "tahun": "2016",
+  "Product_Category": "Accessories",
+  "Product": "Touring Tire Tube",
+  "total_order": "2824",
+  "total_profit": "6429"
+}]

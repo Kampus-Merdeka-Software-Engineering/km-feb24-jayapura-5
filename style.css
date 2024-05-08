@@ -505,6 +505,36 @@ button:hover {
     text-decoration: none;
 }
 
+/* Styling untuk canvas Chart.js */
+#rataChartContainer {
+    margin: 20px;
+    /*border: 1px solid #1e1c1c;*/
+    padding: 10px;
+    border-radius: 10px;
+}
+#ageChartContainer {
+    margin: 20px;
+    /*border: 1px solid #1e1c1c;*/
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.charts-section {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.charrt-container {
+    width: 30%; 
+    border: 1px;
+    padding: 10px;
+}
+
+.charrt-container p{
+    text-align: center;
+}
+
 /* Media Screen */
 
 @media (max-widht: 952px) { 

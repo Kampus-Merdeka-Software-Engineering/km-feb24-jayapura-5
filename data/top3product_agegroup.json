@@ -1,0 +1,73 @@
+[{
+  "Age_Group": "Adults (35-64)",
+  "Product_Category": "Accessories",
+  "Product": "Sport-100 Helmet, Blue",
+  "total_profit": "59741",
+  "total_order": "3462"
+}, {
+  "Age_Group": "Adults (35-64)",
+  "Product_Category": "Accessories",
+  "Product": "Sport-100 Helmet, Red",
+  "total_profit": "59064",
+  "total_order": "3519"
+}, {
+  "Age_Group": "Adults (35-64)",
+  "Product_Category": "Bikes",
+  "Product": "Mountain-200 Black, 42",
+  "total_profit": "55208",
+  "total_order": "75"
+}, {
+  "Age_Group": "Young Adults (25-34)",
+  "Product_Category": "Bikes",
+  "Product": "Mountain-200 Silver, 42",
+  "total_profit": "51847",
+  "total_order": "72"
+}, {
+  "Age_Group": "Young Adults (25-34)",
+  "Product_Category": "Bikes",
+  "Product": "Mountain-200 Black, 38",
+  "total_profit": "50277",
+  "total_order": "77"
+}, {
+  "Age_Group": "Young Adults (25-34)",
+  "Product_Category": "Bikes",
+  "Product": "Mountain-200 Silver, 46",
+  "total_profit": "49444",
+  "total_order": "73"
+}, {
+  "Age_Group": "Youth (\u003c25)",
+  "Product_Category": "Accessories",
+  "Product": "Sport-100 Helmet, Red",
+  "total_profit": "22799",
+  "total_order": "1370"
+}, {
+  "Age_Group": "Youth (\u003c25)",
+  "Product_Category": "Bikes",
+  "Product": "Mountain-200 Silver, 46",
+  "total_profit": "22240",
+  "total_order": "32"
+}, {
+  "Age_Group": "Youth (\u003c25)",
+  "Product_Category": "Bikes",
+  "Product": "Mountain-200 Silver, 38",
+  "total_profit": "21363",
+  "total_order": "30"
+}, {
+  "Age_Group": "Seniors (64+)",
+  "Product_Category": "Accessories",
+  "Product": "ML Mountain Tire",
+  "total_profit": "921",
+  "total_order": "61"
+}, {
+  "Age_Group": "Seniors (64+)",
+  "Product_Category": "Clothing",
+  "Product": "Women\u0027s Mountain Shorts, M",
+  "total_profit": "659",
+  "total_order": "21"
+}, {
+  "Age_Group": "Seniors (64+)",
+  "Product_Category": "Clothing",
+  "Product": "Half-Finger Gloves, L",
+  "total_profit": "630",
+  "total_order": "53"
+}]

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jayapura Team 5</title>
+
+    <link rel="Shortcut icon" href="asset/icon.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <!--Navigation-->
+    <header>
+        <nav>
+            <div class="wrapper">
+                <!--responsive navbar-->
+                <input type="checkbox" id="check">
+                <label for="check" class="checkbtn">
+                    <i style="font-size:24px" class="fa">&#xf0c9;</i>
+                </label>
+                <label class="logo"><img src="asset/logo.png"></label>
+                <ul>
+                    <li><a clas="active" href="index.html">Home</a></li>
+                    <li>
+                        <div class="dropdown">
+                            <a href="#" class="dropbtn"><i class="fa fa-caret-down"></i>About</a>
+                            <div class="dropdown-content">
+                                <a href="#about">Capstone Project</a>
+                                <a href="https://www.kaggle.com/datasets/sadiqshah/bike-sales-in-europe">Dataset</a>
+                                <a href="https://www.canva.com/design/DAGBkGy35gY/Sku3hsh_ql_GQzWrjFEpyw/edit">Presentation
+                                    in Data Analytics</a>
+                            </div>
+                        </div>
+                        <li><a href="dashbroad.html">Dashboard</a></li>
+                    <li><a href="#team">Teams</a></li>
+                    <li><a href="#collab">Collaborations</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Home -->
+        <section id="home">
+            <div class="section-top">
+                <div class="content">
+                    <h1>Dashboard</h1>
+                    <p class="deskripsi">Kami telah menyusun beragam grafik yang mencakup berbagai aspek dari data yang kami analisis</p>
+                </div>
+            </div>
+        </section>
+
+        
+            <section class="chart-section">
+                <div class="charrt-container">
+                    <p>Rataan Profit</p>
+                        <div id="rataChartContainer">
+                            <canvas id="rataChart"></canvas>
+                        </div>
+                </div>
+
+                <div class="charrt-container">
+                    <p>Profit Age Group</p>
+                        <div id="ageChartContainer">
+                            <canvas id="ageChart"></canvas>
+                        </div>
+                </div>
+            </section>
+    </main>
+
+    <footer id="copyright">
+        <div class="wrapper">
+            &copy; 2024 <b>Jayapura Team 5</b> All Rights Reserved.
+        </div>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

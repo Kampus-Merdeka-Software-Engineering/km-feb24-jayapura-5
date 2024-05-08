@@ -1,0 +1,31 @@
+[{
+  "tahun": "2011",
+  "Total_Product_Category": "1",
+  "total_profit": "277373",
+  "total_order": "458"
+}, {
+  "tahun": "2012",
+  "Total_Product_Category": "1",
+  "total_profit": "279851",
+  "total_order": "466"
+}, {
+  "tahun": "2013",
+  "Total_Product_Category": "3",
+  "total_profit": "511956",
+  "total_order": "26760"
+}, {
+  "tahun": "2014",
+  "Total_Product_Category": "3",
+  "total_profit": "520758",
+  "total_order": "37444"
+}, {
+  "tahun": "2015",
+  "Total_Product_Category": "3",
+  "total_profit": "646498",
+  "total_order": "26345"
+}, {
+  "tahun": "2016",
+  "Total_Product_Category": "3",
+  "total_profit": "635646",
+  "total_order": "36399"
+}]
