@@ -28,7 +28,6 @@ nav {
 }
 
 nav ul {
-    margin-right: 50px;
     float: inline-end;
 }
 
@@ -116,8 +115,8 @@ a:hover {
     font-size: 20px;
     font-weight: 300;
     color: #111;
-    margin-left: 200px;
-    margin-right: 200px;
+    margin-left: 150px;
+    margin-right: 150px;
 }
 
 section {
@@ -133,9 +132,6 @@ section {
 }
 
 aside {
-    /* display: flex; */
-    /* flex-direction: column; */
-    /* float: 1; */
     width: 30%;
     padding-left: 50px;
     padding-right: 50px;
@@ -423,52 +419,6 @@ button:hover {
     background-color: #d2b356;
 }
 
-
-/* 
-
-.dropdown {
-    float: left;
-    overflow: hidden;
-}
-
-.dropdown .dropbtn {
-    font-size: 16px;
-    border: none;
-    outline: none;
-    color: black;
-    padding: 14px 16px;
-    background-color: inherit;
-    font-family: inherit;
-    margin: 0;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1
-}
-
-.dropdown-content a {
-    float: none;
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-}
-
-.dropdown-content a:hover {
-    background-color: #ddd;
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-} */
-
-
 /* Styling for the dropdown menu */
 .dropdown {
     position: relative;
@@ -518,18 +468,7 @@ button:hover {
 }
 
 /* Media Screen */
-
-@media (max-width: 952px) { 
-    .logo img {
-        font-size: 30px;
-    }
-
-    nav ul li a {
-        font-size: 16px;
-    }
-}
-
-@media (max-width: 929px) { /* 0px -> 858px */
+@media (max-width: 929px) { 
     .checkbtn {
         display: block;
     }
@@ -569,6 +508,15 @@ button:hover {
 
     #check:checked~ul {
         left: 70%;
+    }
+
+    .content .deskripsi {
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+    .dropbtn {
+        font-size: 20px;
     }
 }
 
@@ -618,8 +566,8 @@ button:hover {
     }
 }
 
-@media (min-width: 0px) and (max-width: 715px) {
+/* @media (min-width: 0px) and (max-width: 715px) {
     h1 {
         margin-top: 150px;
     }
-}
+} */
