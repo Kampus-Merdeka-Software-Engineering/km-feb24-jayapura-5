@@ -26,7 +26,7 @@
                     <li><a clas="active" href="index.html">Home</a></li>
                     <li>
                         <div class="dropdown">
-                            <a href="#" class="dropbtn"><i class="fa fa-caret-down"></i>About</a>
+                            <a href="#" class="dropbtn">About<i class="fa fa-caret-down"></i></a>
                             <div class="dropdown-content">
                                 <a href="#about">Capstone Project</a>
                                 <a href="https://www.kaggle.com/datasets/sadiqshah/bike-sales-in-europe">Dataset</a>
@@ -34,7 +34,7 @@
                                     in Data Analytics</a>
                             </div>
                         </div>
-                        <li><a href="dashbroad.html">Dashboard</a></li>
+                    <li><a href="dashboard.html">Dashboard</a></li>
                     <li><a href="#team">Teams</a></li>
                     <li><a href="#collab">Collaborations</a></li>
                     <li><a href="#contact">Contact</a></li>
@@ -51,27 +51,28 @@
             <div class="section-top">
                 <div class="content">
                     <h1>Dashboard</h1>
-                    <p class="deskripsi">Kami telah menyusun beragam grafik yang mencakup berbagai aspek dari data yang kami analisis</p>
+                    <p class="deskripsi">Kami telah menyusun beragam grafik yang mencakup berbagai aspek dari data yang
+                        kami analisis</p>
                 </div>
             </div>
         </section>
 
-        
-            <section class="chart-section">
-                <div class="charrt-container">
-                    <p>Rataan Profit</p>
-                        <div id="rataChartContainer">
-                            <canvas id="rataChart"></canvas>
-                        </div>
-                </div>
 
-                <div class="charrt-container">
-                    <p>Profit Age Group</p>
-                        <div id="ageChartContainer">
-                            <canvas id="ageChart"></canvas>
-                        </div>
+        <section class="chart-section">
+            <div class="charrt-container">
+                <p>Rataan Profit</p>
+                <div id="rataChartContainer">
+                    <canvas id="rataChart"></canvas>
                 </div>
-            </section>
+            </div>
+
+            <div class="charrt-container">
+                <p>Profit Age Group</p>
+                <div id="ageChartContainer">
+                    <canvas id="ageChart"></canvas>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer id="copyright">
@@ -79,7 +80,7 @@
             &copy; 2024 <b>Jayapura Team 5</b> All Rights Reserved.
         </div>
     </footer>
-    
+
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="script.js"></script>
 </body>
