@@ -97,12 +97,12 @@ a:hover {
 
     25%,
     45% {
-        background-image: url(asset/banner/banner_2.jpeg);
+        background-image: url(asset/banner/banner_2.jpg);
     }
 
     50%,
     70% {
-        background-image: url(asset/banner/banner_3.jpeg);
+        background-image: url(asset/banner/banner_3.jpg);
     }
 
     75%,
