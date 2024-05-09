@@ -601,6 +601,18 @@ button:hover {
     .kartu-collab {
         width: 50%;
     }
+
+    .row {
+        padding-bottom: 0;
+    }
+
+    .kolom {
+        margin-bottom: 0;
+    }
+
+    .kolom2 {
+        margin-top: 0;
+    }     
 }
 
 /* @media (min-width: 0px) and (max-width: 715px) {
