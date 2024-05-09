@@ -349,7 +349,7 @@ h3 {
     padding: 30px 0px 30px 0px;
     margin-top: 0px;
     color: #FFFFFF;
-    background: #111;
+    background-image: url("asset/footer.jpg");
 }
 
 .container {
@@ -605,18 +605,12 @@ button:hover {
     .row {
         padding-bottom: 0;
     }
-
+    
     .kolom {
         margin-bottom: 0;
     }
-
+    
     .kolom2 {
         margin-top: 0;
-    }     
-}
-
-/* @media (min-width: 0px) and (max-width: 715px) {
-    h1 {
-        margin-top: 150px;
-    }
-} */
+    }   
+}  
