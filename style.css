@@ -551,6 +551,10 @@ button:hover {
     .dropbtn {
         font-size: 20px;
     }
+
+    .dropdown-content {
+        right: 0;
+    }    
 }
 
 @media screen and (max-width: 1060px) {
@@ -597,4 +601,16 @@ button:hover {
     .kartu-collab {
         width: 50%;
     }
-}
+
+    .row {
+        padding-bottom: 0;
+    }
+    
+    .kolom {
+        margin-bottom: 0;
+    }
+    
+    .kolom2 {
+        margin-top: 0;
+    }   
+}  
