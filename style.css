@@ -153,10 +153,12 @@ aside {
 
 aside table {
     text-align: left;
+    flex-direction: row;
 }
 
 aside table td {
     padding-left: 10px;
+    flex-direction: row;
 }
 
 .kolom1 {
@@ -554,7 +556,21 @@ button:hover {
 
     .dropdown-content {
         right: 0;
-    }    
+    }
+
+    aside {
+        width: 100%;
+        /* Mengubah lebar menjadi 100% saat layar berukuran kecil */
+        float: none;
+        /* Menghapus floating */
+        padding: 10px;
+        /* Mengurangi padding */
+    }
+
+    aside table {
+        width: 100%;
+        /* Mengubah lebar tabel menjadi 100% */
+    }
 }
 
 @media screen and (max-width: 1060px) {
@@ -605,12 +621,12 @@ button:hover {
     .row {
         padding-bottom: 0;
     }
-    
+
     .kolom {
         margin-bottom: 0;
     }
-    
+
     .kolom2 {
         margin-top: 0;
-    }   
-}  
+    }
+}
