@@ -2,8 +2,7 @@
     text-decoration: none;
     margin: 0px;
     padding: 0px;
-    /* list-style: none; */
-    /* box-sizing: border-box; */
+    font-family: 'Open Sans', sans-serif, Arial, Helvetica;
 }
 
 body {
@@ -29,7 +28,6 @@ nav {
 }
 
 nav ul {
-    margin-right: 50px;
     float: inline-end;
 }
 
@@ -42,8 +40,8 @@ nav ul li {
 nav ul li a {
     color: black;
     text-align: center;
-    padding: 5px 12px;
-    border-radius: 3px;
+    padding: 10px 12px;
+    border-radius: 23px;
     text-decoration: none;
     font-size: 17px;
 }
@@ -83,6 +81,7 @@ a:hover {
     justify-content: center;
     align-items: center;
     animation: change 20s infinite linear;
+    padding-top: 50px;
 }
 
 .content {
@@ -98,12 +97,12 @@ a:hover {
 
     25%,
     45% {
-        background-image: url(asset/banner/banner_2.jpeg);
+        background-image: url(asset/banner/banner_2.jpg);
     }
 
     50%,
     70% {
-        background-image: url(asset/banner/banner_3.jpeg);
+        background-image: url(asset/banner/banner_3.jpg);
     }
 
     75%,
@@ -115,9 +114,9 @@ a:hover {
 .content .deskripsi {
     font-size: 20px;
     font-weight: 300;
-    color: #111;
-    margin-left: 200px;
-    margin-right: 200px;
+    color: white;
+    margin-left: 150px;
+    margin-right: 150px;
 }
 
 section {
@@ -133,16 +132,15 @@ section {
 }
 
 aside {
-    /* display: flex; */
-    /* flex-direction: column; */
-    /* float: 1; */
     width: 30%;
-    padding-left: 15px;
-    margin-left: 15px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 20px;
+    margin: auto;
     float: right;
     font-style: italic;
-    background-color: lightgray;
-    /* background-image: url("image/meiffel.png"); */
+    background-color: rgb(236, 236, 236);
+    border-radius: 20px;
 }
 
 .profile header {
@@ -209,7 +207,7 @@ h1 {
     font-weight: 800;
     font-size: 62px;
     margin-bottom: 20px;
-    color: #000000;
+    color: white;
     width: 100%;
     line-height: 60px;
 }
@@ -351,23 +349,28 @@ h3 {
     padding: 30px 0px 30px 0px;
     margin-top: 0px;
     color: #FFFFFF;
-    background: #111;
+    background-image: url("asset/footer.jpg");
 }
 
 .container {
     width: 500px;
     border: 1px solid #ccc;
     padding: 30px;
-    border-radius: 5px;
+    border-radius: 20px;
 }
 
 .form-group {
-    margin-bottom: 15px;
+    margin: 20px;
+    margin-right: 20px;
+    padding: 0;
+    gap: 20px;
 }
 
 label {
     display: block;
     margin-bottom: 5px;
+    font-size: 15px;
+    font-weight: 600;
 }
 
 input[type="text"],
@@ -376,8 +379,9 @@ textarea {
     width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
-    border-radius: 3px;
+    border-radius: 5px;
     font-size: 14px;
+    box-sizing: border-box;
 }
 
 textarea {
@@ -385,21 +389,27 @@ textarea {
 }
 
 button {
-    background-color: #4caf4ffa;
+    background-color: #535353;
     color: white;
-    padding: 10px 8px;
+    padding: 10px;
     border: none;
-    border-radius: 3px;
+    border-radius: 5px;
     cursor: pointer;
-
-    /* tombol di sebelah kanan kecil */
-    /* float: right; */
-    /* tombil dengan lebar 100% */
     width: 100%;
+    margin-top: 30px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.form-group button a {
+    color: inherit;
+    /* Mengambil warna teks dari parent (button) */
+    text-decoration: none;
+    /* Menghapus garis bawah tautan */
 }
 
 button:hover {
-    background-color: #3c9141;
+    background-color: #d2b356;
 }
 
 .contact {
@@ -408,55 +418,8 @@ button:hover {
 
 .navbar a:hover,
 .dropdown:hover .dropbtn {
-    text-decoration: underline;
     background-color: #d2b356;
 }
-
-
-/* 
-
-.dropdown {
-    float: left;
-    overflow: hidden;
-}
-
-.dropdown .dropbtn {
-    font-size: 16px;
-    border: none;
-    outline: none;
-    color: black;
-    padding: 14px 16px;
-    background-color: inherit;
-    font-family: inherit;
-    margin: 0;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1
-}
-
-.dropdown-content a {
-    float: none;
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-}
-
-.dropdown-content a:hover {
-    background-color: #ddd;
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-} */
-
 
 /* Styling for the dropdown menu */
 .dropdown {
@@ -481,6 +444,7 @@ button:hover {
     text-decoration: none;
     text-wrap: nowrap;
     line-height: 40px;
+    text-align: left;
 }
 
 .dropdown-content a:hover {
@@ -512,6 +476,7 @@ button:hover {
     padding: 10px;
     border-radius: 10px;
 }
+
 #ageChartContainer {
     margin: 20px;
     /*border: 1px solid #1e1c1c;*/
@@ -526,29 +491,17 @@ button:hover {
 }
 
 .charrt-container {
-    width: 30%; 
+    width: 30%;
     border: 1px;
     padding: 10px;
 }
 
-.charrt-container p{
+.charrt-container p {
     text-align: center;
 }
 
 /* Media Screen */
-
-@media (max-widht: 952px) { 
-    .logo img {
-        font-size: 30px;
-        padding-left: 50px;
-    }
-
-    nav ul li a {
-        font-size: 16px;
-    }
-}
-
-@media (max-width: 929px) { /* 0px -> 858px */
+@media (max-width: 929px) {
     .checkbtn {
         display: block;
     }
@@ -589,6 +542,19 @@ button:hover {
     #check:checked~ul {
         left: 70%;
     }
+
+    .content .deskripsi {
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+    .dropbtn {
+        font-size: 20px;
+    }
+
+    .dropdown-content {
+        right: 0;
+    }    
 }
 
 @media screen and (max-width: 1060px) {
@@ -635,10 +601,16 @@ button:hover {
     .kartu-collab {
         width: 50%;
     }
-}
 
-@media (min-width: 0px) and (max-width: 715px) {
-    h1 {
-        margin-top: 150px;
+    .row {
+        padding-bottom: 0;
     }
-}
+    
+    .kolom {
+        margin-bottom: 0;
+    }
+    
+    .kolom2 {
+        margin-top: 0;
+    }   
+}  
