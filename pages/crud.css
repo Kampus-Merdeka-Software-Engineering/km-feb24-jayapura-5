@@ -105,3 +105,123 @@ form .inputField>div input {
     color: #000;
     font-size: 18px;
 }
+
+/* Untuk tampilan mobile */
+@media only screen and (max-width: 600px) {
+    body {
+        background-color: #d2b356;
+    }
+
+    table tr td {
+        vertical-align: middle;
+        text-align: center;
+        /* Teks menjadi tengah untuk tampilan mobile */
+    }
+
+    td button {
+        margin: 5px;
+    }
+
+    td button i {
+        font-size: 20px;
+    }
+
+    .modal-header {
+        background: #0d6efd;
+        color: #fff;
+    }
+
+    .modal-body form {
+        display: flex;
+        flex-direction: column;
+        /* Tampilan menjadi satu kolom untuk tampilan mobile */
+        padding: 0;
+    }
+
+    .modal-body form .imgholder {
+        width: 100%;
+        /* Lebar gambar diatur agar sesuai dengan lebar layar */
+        height: auto;
+        /* Tinggi gambar disesuaikan secara otomatis */
+        border-radius: 20px;
+        overflow: hidden;
+    }
+
+    .imgholder .upload {
+        position: absolute;
+        bottom: 0;
+        left: 10px;
+        /* Perbaikan penulisan untuk posisi kiri */
+        width: calc(100% - 20px);
+        /* Lebar upload button disesuaikan dengan lebar gambar */
+        height: 50px;
+        /* Tinggi button diubah untuk tampilan mobile */
+        background: rgba(0, 0, 0, 0.3);
+        display: none;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    .upload i {
+        color: #fff;
+        font-size: 25px;
+        /* Ukuran ikon diubah untuk tampilan mobile */
+    }
+
+    .imgholder:hover .upload {
+        display: flex;
+    }
+
+    .imgholder .upload input {
+        display: none;
+    }
+
+    .modal-body form .inputField {
+        flex-basis: 100%;
+        /* Lebar form diubah agar sesuai dengan lebar layar */
+        border-left: none;
+        /* Garis kiri dihapus untuk tampilan mobile */
+        padding-left: 0;
+        /* Padding kiri dihapus untuk tampilan mobile */
+    }
+
+    form .inputField>div {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        /* Tampilan menjadi satu kolom untuk tampilan mobile */
+        margin-bottom: 20px;
+    }
+
+    form .inputField>div label {
+        font-size: 20px;
+        font-weight: 500;
+        margin-bottom: 5px;
+        /* Margin bawah ditambahkan untuk memisahkan label dan input */
+    }
+
+    #userForm form .inputField>div label::after {
+        content: "*";
+        color: red;
+    }
+
+    form .inputField>div input {
+        width: 100%;
+        /* Lebar input diatur agar sesuai dengan lebar layar */
+        padding: 10px;
+        border: none;
+        outline: none;
+        background: transparent;
+        border-bottom: 2px solid blue;
+    }
+
+    .modal-footer .submit {
+        font-size: 18px;
+    }
+
+    #readData form .inputField>div input {
+        color: #000;
+        font-size: 18px;
+    }
+}
