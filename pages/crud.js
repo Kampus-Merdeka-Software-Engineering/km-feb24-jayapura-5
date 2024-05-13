@@ -24,7 +24,7 @@ newUserBtn.addEventListener('click', () => {
     submitBtn.innerText = 'Submit',
         modalTitle.innerText = "Fill the Form"
     isEdit = false
-    imgInput.src = "asset/image/user.jpg"
+    imgInput.src = "/asset/image/user.jpg"
     form.reset()
 })
 
@@ -119,7 +119,7 @@ form.addEventListener('submit', (e) => {
     e.preventDefault()
 
     const information = {
-        picture: imgInput.src == undefined ? "asset/image/user.jpg" : imgInput.src,
+        picture: imgInput.src == undefined ? "/asset/image/user.jpg" : imgInput.src,
         employeeName: userName.value,
         employeeAge: age.value,
         employeeCity: city.value,
@@ -146,7 +146,7 @@ form.addEventListener('submit', (e) => {
 
     form.reset()
 
-    imgInput.src = "asset/image/user.jpg"
+    imgInput.src = "/asset/image/user.jpg"
 
     /* modal.style.display = "none" */
     /* document.querySelector(".modal-backdrop").remove() */
