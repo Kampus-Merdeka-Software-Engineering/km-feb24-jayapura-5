@@ -472,30 +472,26 @@ button:hover {
 }
 
 /* Styling untuk canvas Chart.js */
-#rataChartContainer {
-    margin: 20px;
-    /*border: 1px solid #1e1c1c;*/
-    padding: 10px;
-    border-radius: 10px;
-}
-
-#ageChartContainer {
-    margin: 20px;
-    /*border: 1px solid #1e1c1c;*/
-    padding: 10px;
-    border-radius: 10px;
+canvas {
+    display: flex;
+    width: 50px;
+    height: 100px;
 }
 
 .charts-section {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 800px;
+    padding: 20px;
 }
 
 .charrt-container {
-    width: 30%;
-    border: 1px;
-    padding: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 100%;
 }
 
 .charrt-container p {
@@ -573,6 +569,19 @@ button:hover {
     }
 }
 
+@media (min-width: 768px) {
+    .charts-section {
+        grid-template-columns: repeat(1fr, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .charts-section {
+        grid-template-columns: repeat(1fr, 1fr);
+        max-width: 800px;
+    }
+}
+
 @media screen and (max-width: 1060px) {
     .wrapper {
         width: 90%;
@@ -628,5 +637,12 @@ button:hover {
 
     .kolom2 {
         margin-top: 0;
+    }
+}
+
+@media (min-width: 1200px) {
+    .charts-section {
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 1200px;
     }
 }
