@@ -1,7 +1,6 @@
-/* untuk index.html */
-
 const form = document.getElementById("myForm");
 const entries = document.getElementById("entries");
+let editIndex = -1;
 
 form.addEventListener("submit", function(event) {
     event.preventDefault();
@@ -11,33 +10,66 @@ form.addEventListener("submit", function(event) {
     const subject = document.getElementById("subject").value;
     const message = document.getElementById("message").value;
 
-    const entry = document.createElement("div");
-    entry.classList.add("entry");
-    entry.innerHTML = `
-        <strong>Name:</strong> ${name}<br>
-        <strong>Email:</strong> ${email}<br>
-        <strong>Subject:</strong> ${subject}<br>
-        <strong>Message:</strong> ${message}<br>
+    const entry = {
+        name,
+        email,
+        subject,
+        message
+    };
+
+    if (editIndex === -1) {
+        addEntry(entry);
+    } else {
+        updateEntry(entry);
+    }
+
+    form.reset();
+    editIndex = -1;
+});
+
+function addEntry(entry) {
+    const entryElement = document.createElement("div");
+    entryElement.classList.add("entry");
+    entryElement.innerHTML = `
+        <strong>Name:</strong> ${entry.name}<br>
+        <strong>Email:</strong> ${entry.email}<br>
+        <strong>Subject:</strong> ${entry.subject}<br>
+        <strong>Message:</strong> ${entry.message}<br>
         <button class="edit-btn" onclick="editEntry(this)">Edit</button>
         <button class="delete-btn" onclick="deleteEntry(this)">Delete</button>
     `;
     
-    entries.appendChild(entry);
-    form.reset();
-});
-
-function deleteEntry(entry) {
-    entry.parentNode.remove();
+    entries.appendChild(entryElement);
 }
 
-function editEntry(entry) {
-    const currentEntry = entry.parentNode;
-    const [name, email, subject, message] = currentEntry.innerText.split("\n").filter(line => line.trim() !== "");
-    
-    form.name.value = name.split(": ")[1];
-    form.email.value = email.split(": ")[1];
-    form.subject.value = subject.split(": ")[1];
-    form.message.value = message.split(": ")[1];
+function deleteEntry(entryButton) {
+    entryButton.parentNode.remove();
+}
 
-    currentEntry.remove();
+function editEntry(entryButton) {
+    const entryElement = entryButton.parentNode;
+    const [name, email, subject, message] = entryElement.innerText.split("\n").filter(line => line.trim() !== "").map(line => line.split(": ")[1]);
+    
+    document.getElementById("name").value = name;
+    document.getElementById("email").value = email;
+    document.getElementById("subject").value = subject;
+    document.getElementById("message").value = message;
+
+    editIndex = Array.from(entries.children).indexOf(entryElement);
+    entryElement.remove();
+}
+
+function updateEntry(entry) {
+    const entryElement = document.createElement("div");
+    entryElement.classList.add("entry");
+    entryElement.innerHTML = `
+        <strong>Name:</strong> ${entry.name}<br>
+        <strong>Email:</strong> ${entry.email}<br>
+        <strong>Subject:</strong> ${entry.subject}<br>
+        <strong>Message:</strong> ${entry.message}<br>
+        <button class="edit-btn" onclick="editEntry(this)">Edit</button>
+        <button class="delete-btn" onclick="deleteEntry(this)">Delete</button>
+    `;
+    
+    entries.appendChild(entryElement);
 }
