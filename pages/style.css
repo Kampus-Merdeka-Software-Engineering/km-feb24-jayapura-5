@@ -90,26 +90,39 @@ a:hover {
 
 @keyframes change {
 
-    0%,
-    20% {
+    0%, 20% {
         background-image: url(/asset/banner/banner_1.jpg);
     }
 
-    25%,
-    45% {
+    21%, 24% {
+        background-image: url(/asset/banner/banner_1.jpg);
+    }
+
+    25%, 45% {
         background-image: url(/asset/banner/banner_2.jpg);
     }
 
-    50%,
-    70% {
+    46%, 49% {
+        background-image: url(/asset/banner/banner_2.jpg);
+    }
+
+    50%, 70% {
         background-image: url(/asset/banner/banner_3.jpg);
     }
 
-    75%,
-    95% {
+    71%, 74% {
+        background-image: url(/asset/banner/banner_3.jpg);
+    }
+
+    75%, 95% {
+        background-image: url(/asset/banner/banner_1.jpg);
+    }
+
+    96%, 100% {
         background-image: url(/asset/banner/banner_1.jpg);
     }
 }
+
 
 .content .deskripsi {
     font-size: 20px;
