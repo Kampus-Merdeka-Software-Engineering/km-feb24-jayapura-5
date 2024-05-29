@@ -43,10 +43,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const loginForm = document.querySelector('.login form');
 
     loginForm.addEventListener('submit', (e) => {
-        e.preventDefault(); // Hindari pengiriman formulir secara default
+        e.preventDefault(); /* Hindari pengiriman formulir secara default*/
 
-        // Lakukan logika autentikasi di sini (misalnya dengan ...)
-        // Jika autentikasi berhasil, arahkan pengguna ke halaman yang ditentukan
+        /* Lakukan logika autentikasi di sini (misalnya dengan ...)
+         Jika autentikasi berhasil, arahkan pengguna ke halaman yang ditentukan*/
         window.location.href = '/pages/form/form_admin.html';
     });
 });

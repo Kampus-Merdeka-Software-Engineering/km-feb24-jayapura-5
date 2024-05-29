@@ -69,7 +69,8 @@ hr {
     background-image: url("/asset/footer.jpg");
 }
 
-i{
+a{
+    text-decoration: none;
     color: #fff;
 }
 
