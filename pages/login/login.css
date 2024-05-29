@@ -5,7 +5,6 @@
     font-family: 'Poppins', sans-serif;
 }
 
-
 body {
     display: flex;
     justify-content: center;
@@ -32,6 +31,11 @@ header {
     font-size: 2em;
     color: #fff;
     user-select: none;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
 }
 
 .navigation a {
@@ -80,7 +84,23 @@ header {
 .navigation .btnLogin-popup:hover {
     background: #fff;
     color: #162938;
+}
 
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+}
+
+.menu-toggle .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px 0;
+    transition: 0.4s;
 }
 
 .wrapper {
@@ -254,4 +274,44 @@ header {
 
 .login-register p a:hover {
     text-decoration: underline;
+}
+
+/* Media Queries */
+@media (max-width: 992px) {
+    header {
+        padding: 20px 40px;
+    }
+    .navigation {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+        position: absolute;
+        top: 70px; /* Adjust based on header height */
+        left: 0;
+        padding: 20px;
+        z-index: 100;
+    }
+    .navigation a, .navigation .btnLogin-popup {
+        margin: 10px 0;
+        color: #fff;
+        text-align: left;
+        width: 100%;
+    }
+    .menu-toggle {
+        display: flex;
+    }
+    .menu-toggle.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    .menu-toggle.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    .menu-toggle.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    .navigation.active {
+        display: flex;
+    }
 }
