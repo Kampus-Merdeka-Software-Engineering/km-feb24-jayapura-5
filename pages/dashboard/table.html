@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DataTables Example</title>
+    <link rel="stylesheet" href="table.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.min.css">
+</head>
+<body>
+    <main>
+        <section class="table-container">
+            <button><a href="../dashboard/dashboard.html"><i>Go Back</i></a></button>
+
+            <div class="table-wrapper">
+                <h2>Age Group Table</h2>
+                <table id="ageGroupTable" class="display">
+                    <thead>
+                        <tr>
+                            <th>Age Group</th>
+                            <th>Profit</th>
+                            <th>Order</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+
+            <div class="table-wrapper">
+                <h2>Rata Profit Table</h2>
+                <table id="rataProfitTable" class="display">
+                    <thead>
+                        <tr>
+                            <th>Product Category</th>
+                            <th>Rata Profit</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+
+            <div class="table-wrapper">
+                <h2>Total Profit Per Year Table</h2>
+                <table id="totalProfitPerYearTable" class="display">
+                    <thead>
+                        <tr>
+                            <th>Tahun</th>
+                            <th>Product Category</th>
+                            <th>Product</th>
+                            <th>Total Order</th>
+                            <th>Total Profit</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+
+            <div class="table-wrapper">
+                <h2>Total Profit Per Age Table</h2>
+                <table id="totalProfitPerAgeTable" class="display">
+                    <thead>
+                        <tr>
+                            <th>Age Group</th>
+                            <th>Product Category</th>
+                            <th>Product</th>
+                            <th>Total Profit</th>
+                            <th>Total Order</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+
+            <div class="table-wrapper">
+                <h2>Trend Penjualan Table</h2>
+                <table id="trendPenjualanTable" class="display">
+                    <thead>
+                        <tr>
+                            <th>Tahun</th>
+                            <th>Total Product Category</th>
+                            <th>Total Profit</th>
+                            <th>Total Order</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+
+            <div class="table-wrapper">
+                <h2>Ranked Product Table</h2>
+                <table id="rankedProductTable" class="display">
+                    <thead>
+                        <tr>
+                            <th>Product Category</th>
+                            <th>Product</th>
+                            <th>Total Profit</th>
+                            <th>Total Order</th>
+                            <th>Profit Rank</th>
+                            <th>Qty Rank</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <footer id="copyright">
+        <div class="wrapper">
+            <div class="social-icons">
+                <a href="mailto:team5.jayapura@gmail.com" class="social-icon email" target="_blank">
+                    <img src="/asset/contact/gmail.png" alt="Email">
+                </a>
+                <a href="https://www.instagram.com/revou_id/" class="social-icon instagram" target="_blank">
+                    <img src="/asset/contact/instagram.png" alt="Instagram">
+                </a>
+                <a href="https://www.youtube.com/c/revoudotco" class="social-icon youtube" target="_blank">
+                    <img src="/asset/contact/youtube.png" alt="YouTube">
+                </a>
+                <a href="https://x.com/revoudotco" class="social-icon twitter" target="_blank">
+                    <img src="/asset/contact/x.jpeg" alt="X">
+                </a>
+                <a href="https://www.linkedin.com/school/revou/" class="social-icon linkedin" target="_blank">
+                    <img src="/asset/contact/linkedin.png" alt="LinkedIn">
+                </a>
+            </div>
+            &copy; 2024 <b>Jayapura Team 5</b> All Rights Reserved.
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+    <script src="table.js"></script>
+</body>
+</html>

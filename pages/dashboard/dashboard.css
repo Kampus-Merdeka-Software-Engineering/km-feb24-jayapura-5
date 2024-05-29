@@ -144,18 +144,6 @@ section {
     position: relative;
 }
 
-aside {
-    width: 30%;
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-top: 20px;
-    margin: auto;
-    float: right;
-    font-style: italic;
-    background-color: rgb(236, 236, 236);
-    border-radius: 20px;
-}
-
 .profile header {
     text-align: center;
 }
@@ -164,58 +152,12 @@ aside {
     width: 150px;
 }
 
-aside table {
-    text-align: left;
-    flex-direction: row;
-}
-
-aside table td {
-    padding-left: 10px;
-    flex-direction: row;
-}
-
-.kolom1 {
-    margin-top: 100px;
-    margin-bottom: 50px;
-    margin-right: 250px;
-}
-
-.kolom1 .deskripsi {
-    font-size: 20px;
-    font-weight: 300;
-    color: #111;
-}
 
 .row {
     justify-content: space-between;
     /* Membuat ruang yang sama di antara setiap kolom */
     padding: 30px;
 }
-
-.kolom2 {
-    margin-top: 50px;
-    flex: 1;
-    /* Kolom akan mendapatkan lebar yang sama */
-    margin-right: 10px;
-    /* Jarak antara kolom */
-}
-
-.kolom2 .deskripsi {
-    font-size: 20px;
-    font-weight: bold;
-}
-
-.kolom {
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
-
-.kolom .deskripsi {
-    font-size: 20px;
-    font-weight: bold;
-    color: #d2b356;
-}
-
 
 h1 {
     font-family: 'Open Sans', sans-serif, Arial, Helvetica;
@@ -225,15 +167,6 @@ h1 {
     color: white;
     width: 100%;
     line-height: 60px;
-}
-
-h2 {
-    font-family: 'Open Sans', sans-serif, Arial, Helvetica;
-    font-weight: 800;
-    font-size: 45px;
-    margin-bottom: 20px;
-    width: 100%;
-    line-height: 50px;
 }
 
 p {
@@ -275,67 +208,6 @@ p {
     padding: 10px 0px 10px 0px;
 }
 
-.tengah {
-    text-align: center;
-    width: 100%;
-}
-
-.team-list {
-    width: 100%;
-    position: relative;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.kartu-team {
-    width: 20%;
-    margin: 0 auto;
-}
-
-.kartu-team img {
-    width: 80%;
-    border-radius: 50%;
-}
-
-.kartu-team h3 {
-    font-family: 'Open Sans', sans-serif, Arial, Helvetica;
-    font-size: 18px;
-    text-align: center;
-    color: #111111;
-    margin: 0;
-    padding-top: 10px;
-}
-
-.kartu-team p {
-    font-family: 'Open Sans', sans-serif, Arial, Helvetica;
-    font-size: 15px;
-    margin: 0;
-    padding: 0%;
-    text-align: center;
-    color: #d2b356;
-}
-
-.collab-list {
-    width: 100%;
-    position: relative;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.kartu-collab {
-    width: 20%;
-    margin: 0 auto;
-}
-
-.kartu-collab img {
-    width: 100px;
-}
-
-#contact {
-    background: #FCFCFC;
-    padding: 50px 0px 50px 0px;
-}
-
 .footer {
     width: 100%;
     position: relative;
@@ -375,15 +247,6 @@ hr {
     object-fit: cover;
 }
 
-h3 {
-    font-family: 'Open Sans', sans-serif, Arial, Helvetica;
-    font-weight: 800;
-    font-size: 30px;
-    margin-bottom: 20px;
-    width: 100%;
-    font-weight: inherit;
-}
-
 #copyright {
     text-align: center;
     width: 100%;
@@ -391,58 +254,6 @@ h3 {
     margin-top: 0px;
     color: #FFFFFF;
     background-image: url("/asset/footer.jpg");
-}
-
-.container {
-    width: 500px;
-    border: 1px solid #ccc;
-    padding: 30px;
-    border-radius: 20px;
-}
-
-.form-group {
-    margin: 20px;
-    padding: 0;
-    gap: 20px;
-}
-
-label {
-    display: block;
-    margin-bottom: 5px;
-    font-size: 15px;
-    font-weight: 600;
-}
-
-input[type="text"],
-input[type="email"],
-textarea {
-    width: calc(100% - 22px);
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 14px;
-    box-sizing: border-box;
-}
-
-textarea {
-    height: 100px;
-}
-
-button {
-    background-color: #535353;
-    color: white;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    width: calc(100% - 22px);
-    margin-top: 30px;
-    font-size: 15px;
-    font-weight: 600;
-}
-
-button:hover {
-    background-color: #d2b356;
 }
 
 .navbar a:hover,
@@ -527,14 +338,6 @@ button:hover {
     text-align: center;
 }
 
-
-.table-container {
-    margin: 20px auto;
-    width: 90%;
-    max-width: 1200px;
-}
-
-
 /* Media Screen */
 @media (max-width: 929px) {
     .checkbtn {
@@ -590,21 +393,7 @@ button:hover {
     .dropdown-content {
         right: 0;
     }
-
-    aside {
-        width: 100%;
-        /* Mengubah lebar menjadi 100% saat layar berukuran kecil */
-        float: none;
-        /* Menghapus floating */
-        padding: 10px;
-        /* Mengurangi padding */
-    }
-
-    aside table {
-        width: 100%;
-        /* Mengubah lebar tabel menjadi 100% */
-    }
-
+    
     .charts {
         grid-template-columns: repeat(auto);
         width: 100%;
@@ -617,15 +406,6 @@ button:hover {
         grid-template-columns: repeat(auto);
         margin-top: 30px;
         width: 100%;
-    }
-    .table-container {
-        width: 100%;
-        margin: 10px 0;
-        overflow-x: auto;
-    }
-
-    table.dataTable {
-        width: 100% !important;
     }
 }
 
@@ -674,24 +454,8 @@ button:hover {
         height: auto;
     }
 
-    .kartu-team {
-        width: 50%;
-    }
-
-    .kartu-collab {
-        width: 50%;
-    }
-
     .row {
         padding-bottom: 0;
-    }
-
-    .kolom {
-        margin-bottom: 0;
-    }
-
-    .kolom2 {
-        margin-top: 0;
     }
 
     .charts {
