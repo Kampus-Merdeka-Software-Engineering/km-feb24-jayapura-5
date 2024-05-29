@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+     <!--Bootstrap 5 icons CDN-->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <title>Form Submission</title>
+
+    <link rel="Shortcut icon" href="/asset/icon.png" />
+    <link rel="stylesheet" href="form.css">
+</head>
+
+<body>
+    <section class="p-3">
+        <div class="container">
+            <h1>Submit User Data</h1>
+            <button><a href="/index.html"><i class="bi bi-house-up-fill"></i></a></button>
+            <br>
+            <br>
+            <form id="myForm">
+                <div class="card imgholder">
+                    <label for="imgInput" class="upload">
+                        <input type="file" id="imgInput">
+                        <i class="bi bi-plus-circle-dotted"></i>
+                    </label>
+                    <img src="/asset/image/user.jpg" alt="" width="200" height="200" class="img">
+                </div>
+                <div class="inputField">
+                    <div>
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" required>
+                    </div>
+                    <div>
+                        <label for="age">Age:</label>
+                        <input type="number" id="age" required>
+                    </div>
+                    <div>
+                        <label for="city">City:</label>
+                        <input type="text" id="city" required>
+                    </div>
+                    <div>
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" required>
+                    </div>
+                    <div>
+                        <label for="phone">Number:</label>
+                        <input type="number" id="phone" minlength="11" maxlength="12" required>
+                    </div>
+                    <div>
+                        <label for="komentar">Komentar:</label>
+                        <input type="text" id="komentar" required>
+                    </div>
+                    <div>
+                        <label for="pDate">Post Date:</label>
+                        <input type="date" id="pDate" required>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary submit">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <script src="form.js"></script>
+</body>
+
+</html>
