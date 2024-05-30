@@ -9,6 +9,20 @@ var form = document.getElementById("myForm"),
     komentar = document.getElementById("komentar"),
     pDate = document.getElementById("pDate");
 
+/* Fungsi validatePhoneLength untuk memvalidasi panjang nomor telepon */
+function validatePhoneLength() {
+    const phoneValue = phone.value;
+
+    if (phoneValue.length < 11 || phoneValue.length > 12) {
+        phone.setCustomValidity('Nomor telepon harus memiliki panjang antara 11 dan 12 digit.');
+    } else {
+        phone.setCustomValidity('');
+    }
+}
+
+/* Event listener untuk validasi langsung pada input nomor telepon */
+phone.addEventListener('input', validatePhoneLength);
+
 file.onchange = function () {
     if (file.files[0].size < 1000000) {
         const fileReader = new FileReader();
