@@ -9,7 +9,6 @@ document.addEventListener("DOMContentLoaded", function () {
     })
     .then(data => {
         /*Memuat data dan membuat grafik*/
-        console.log(data);
         createChart(data);
     })
     .catch(error => {
@@ -25,7 +24,6 @@ fetch('/data/ranked_product_by_profit.json')
     })
     .then(data => {
         /* Memuat data dan membuat grafik*/
-        console.log(data);
         drawRankedProductByProfitChart(data)
     })
     .catch(error => {
@@ -43,7 +41,6 @@ fetch('/data/rataan_profit.json')
     })
     .then(data => {
         /* Memuat data dan membuat grafik*/
-        console.log(data);
         drawAverageProfitByCategoryChart(data);
     })
     .catch(error => {
@@ -60,7 +57,6 @@ fetch('/data/top3_produk_pertahun.json')
     })
     .then(data => {
         /* Memuat data dan membuat grafik*/
-        console.log(data);
         drawTotalProfitPerYearChart(data);
     })
     .catch(error => {
@@ -78,7 +74,6 @@ fetch('/data/top3product_agegroup.json')
     })
     .then(data => {
         /* Memuat data dan membuat grafik*/
-        console.log(data);
         drawTotalProfitPerAgeChart(data);
     })
     .catch(error => {
@@ -95,7 +90,6 @@ fetch('/data/trend_penjualan_pertahun.json')
     })
     .then(data => {
         /* Memuat data dan membuat grafik*/
-        console.log(data)
         drawTrendPenjualan(data)
     })
     .catch(error => {
@@ -333,10 +327,10 @@ function drawTotalProfitPerAgeChart(data) {
     var datasets = {};
 
     /* Mengelompokkan data profit per kelompok usia berdasarkan kategori produk*/
-    var colors = ['rgba(54, 162, 235, 0.6)', 'rgba(255, 99, 132, 0.6)', 'rgba(255, 206, 86, 0.6)']; // Warna-warna yang akan digunakan
+    var colors = ['rgba(54, 162, 235, 0.6)', 'rgba(255, 99, 132, 0.6)', 'rgba(255, 206, 86, 0.6)']; /* Warna-warna yang akan digunakan */
     data.forEach((item, index) => {
         if (!datasets[item.Product_Category]) {
-            const colorIndex = Object.keys(datasets).length % colors.length; // Mendapatkan indeks warna
+            const colorIndex = Object.keys(datasets).length % colors.length; /* Mendapatkan indeks warna */
             datasets[item.Product_Category] = {
                 label: item.Product_Category,
                 data: [],
