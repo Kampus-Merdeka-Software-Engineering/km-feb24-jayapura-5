@@ -31,11 +31,11 @@ document.addEventListener("DOMContentLoaded", function () {
         const product = { Product_Category: category, Product: name, total_profit: profit, total_order: order, Profit_Rank: profitRank, Qty_Rank: qtyRank };
 
         if (editingIndex === -1) {
-            // Add new product
+            /* Add new product */
             products.push(product);
             dataTable.row.add(product).draw();
         } else {
-            // Edit existing product
+            /* Edit existing product */
             products[editingIndex] = product;
             dataTable.row(editingIndex).data(product).draw();
             editingIndex = -1;
