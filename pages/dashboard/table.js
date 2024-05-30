@@ -172,3 +172,7 @@ function initializeTrendPenjualanTable(data) {
         ]
     });
 }
+
+function goBack() {
+    window.location.href = '/pages/dashboard/dashboard.html';
+}

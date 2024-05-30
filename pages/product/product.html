@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Table</title>
+    <link rel="Shortcut icon" href="/asset/icon.png">
+    <link rel="stylesheet" href="product.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.min.css">
+</head>
+<body>
+    <nav>
+        <button onclick="goHome()">Home</button>
+    </nav>
+
+    <form id="productForm">
+        <input type="hidden" id="productId">
+        <label for="productCategory">Category:</label>
+        <input type="text" id="productCategory" required><br>
+        <label for="productName">Name:</label>
+        <input type="text" id="productName" required><br>
+        <label for="productProfit">Profit:</label>
+        <input type="number" id="productProfit" required><br>
+        <label for="productOrder">Order:</label>
+        <input type="number" id="productOrder" required><br>
+        <label for="profitRank">Profit Rank:</label>
+        <input type="number" id="profitRank" required><br>
+        <label for="qtyRank">Qty Rank:</label>
+        <input type="number" id="qtyRank" required><br>
+        <button type="submit">Submit</button>
+    </form>
+    <table id="rankedProductTable" class="display" style="width:100%">
+        <thead>
+            <tr>
+                <th>Category</th>
+                <th>Name</th>
+                <th>Profit</th>
+                <th>Order</th>
+                <th>Profit Rank</th>
+                <th>Qty Rank</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+    <script src="product.js"></script>
+</body>
+</html>
