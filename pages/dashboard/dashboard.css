@@ -339,7 +339,7 @@ hr {
 }
 
 /* Media Screen */
-@media (max-width: 929px) {
+@media (max-width: 984px) {
     .checkbtn {
         display: block;
     }
@@ -362,7 +362,7 @@ hr {
 
     nav ul li {
         display: block;
-        margin: 50px 0;
+        margin: 40px 0;
         line-height: 30px;
         z-index: 999;
     }
@@ -417,7 +417,7 @@ hr {
     }
 }
 
-@media screen and (max-width: 1060px) {
+@media screen and (max-width: 1115px) {
     .wrapper {
         width: 90%;
     }
