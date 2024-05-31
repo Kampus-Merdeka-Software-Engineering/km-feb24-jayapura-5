@@ -321,6 +321,7 @@ hr {
     gap: 20px;
     width: 50%;
     height: 50%;
+    justify-content: center;
 }
 
 .chart-item {
