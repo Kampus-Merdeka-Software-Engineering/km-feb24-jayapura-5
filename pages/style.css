@@ -522,7 +522,7 @@ button:hover {
 }
 
 /* Media Screen */
-@media (max-width: 929px) {
+@media (max-width: 984px) {
     .checkbtn {
         display: block;
     }
@@ -592,7 +592,7 @@ button:hover {
     }
 }
 
-@media screen and (max-width: 1060px) {
+@media screen and (max-width: 1115px) {
     .wrapper {
         width: 90%;
     }
