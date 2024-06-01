@@ -68,7 +68,7 @@ a:hover {
 
 .section-top {
     width: 100%;
-    height: 100vh;
+    height: 40vh;
     /* Menggunakan 100vh untuk ketinggian agar sesuai dengan tinggi layar */
     overflow: hidden;
     position: relative;
@@ -81,7 +81,7 @@ a:hover {
     justify-content: center;
     align-items: center;
     animation: change 20s infinite linear;
-    padding-top: 50px;
+    padding-top: 80px;
 }
 
 .content {
