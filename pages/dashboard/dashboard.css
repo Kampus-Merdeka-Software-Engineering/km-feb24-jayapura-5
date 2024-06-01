@@ -84,6 +84,22 @@ a:hover {
     padding-top: 80px;
 }
 
+.section-top::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3); /* Menggunakan warna hitam dengan opacity 30% sebagai overlay */
+    z-index: 1;
+}
+
+.section-top > * {
+    position: relative;
+    z-index: 2; /* Membuat konten di atas overlay */
+}
+
 .content {
     padding: 20px;
 }
