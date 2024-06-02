@@ -8,7 +8,6 @@ var form = document.getElementById("myForm"),
     phone = document.getElementById("phone"),
     komentar = document.getElementById("komentar"),
     pDate = document.getElementById("pDate"),
-    submitBtn = document.querySelector(".submit"),
     userInfo = document.getElementById("data"),
     modalElement = document.getElementById("userForm"),
     modalTitle = document.querySelector("#userForm .modal-title"),
@@ -85,7 +84,7 @@ function validatePhoneLength() {
 /* Event listener untuk validasi langsung pada input nomor telepon */
 phone.addEventListener('input', validatePhoneLength);
 
-/* Modify showInfo function to accept data as a parameter */
+/* Modify showInfo function to accept data as a parameter */
 function showInfo() {
     userInfo.innerHTML = '';
     filteredData.forEach((element, index) => {
@@ -102,7 +101,7 @@ function showInfo() {
                 <td>${element.postDate}</td>
                 <td>
                     <button class="btn btn-success" onclick="readInfo('${element.picture}', '${element.employeeName}', '${element.employeeAge}', '${element.employeeCity}', '${element.employeeEmail}', '${element.employeePhone}', '${element.employeeKomentar}', '${element.postDate}')" data-bs-toggle="modal" data-bs-target="#readData"><i class="bi bi-eye"></i></button>
-                    <button class="btn btn-primary" onclick="editInfo(${index}, '${element.picture}', '${element.employeeName}', '${element.employeeAge}', '${element.employeeCity}', '${element.employeeEmail}', '${element.employeePhone}', '${element.employeeKomentar}', '${element.postDate}')" data-bs-toggle="modal" data-bs-target="#userForm"><i class="bi bi-pencil-square"></i></button>
+                    <!-- Hapus tombol edit -->
                     <button class="btn btn-danger" onclick="deleteInfo(${index})"><i class="bi bi-trash"></i></button>
                 </td>
             </tr>`;
@@ -121,21 +120,9 @@ function readInfo(pic, name, age, city, email, phone, komentar, pDate) {
     document.getElementById("showpDate").value = pDate;
 }
 
-function editInfo(index, pic, name, Age, City, Email, Phone, Komentar, pDate) {
-    isEdit = true;
-    editId = index;
-    imgInput.src = pic;
-    userName.value = name;
-    age.value = Age;
-    city.value = City;
-    email.value = Email;
-    phone.value = Phone;
-    komentar.value = Komentar;
-    pDate.value = pDate;
-
-    submitBtn.innerText = "Update";
-    modalTitle.innerText = "Update The Form";
-}
+/* Hapus fungsi editInfo */
+/* Hapus definisi variabel editId */
+/* Hapus definisi variabel isEdit */
 
 function deleteInfo(index) {
     if (confirm("Are you sure want to delete?")) {
@@ -146,39 +133,7 @@ function deleteInfo(index) {
     }
 }
 
-/* Ensure search and sort are updated after adding, editing, or deleting data */
-form.addEventListener('submit', (e) => {
-    e.preventDefault();
-
-    const information = {
-        picture: imgInput.src === undefined ? "/asset/image/user.jpg" : imgInput.src,
-        employeeName: userName.value,
-        employeeAge: age.value,
-        employeeCity: city.value,
-        employeeEmail: email.value,
-        employeePhone: phone.value,
-        employeeKomentar: komentar.value,
-        postDate: pDate.value
-    };
-
-    if (!isEdit) {
-        getData.push(information);
-    } else {
-        isEdit = false;
-        getData[editId] = information;
-    }
-
-    filteredData = [...getData];
-    localStorage.setItem('userProfile', JSON.stringify(getData));
-
-    submitBtn.innerText = "Submit";
-    modalTitle.innerHTML = "Fill The Form";
-
-    showInfo();
-
-    form.reset();
-    imgInput.src = "/asset/image/user.jpg";
-});
+/* Hapus bagian event listener untuk submit form */
 
 showInfo();
 
