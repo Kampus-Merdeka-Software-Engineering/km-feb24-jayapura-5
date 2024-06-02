@@ -72,7 +72,6 @@ a:hover {
     /* Menggunakan 100vh untuk ketinggian agar sesuai dengan tinggi layar */
     overflow: hidden;
     position: relative;
-    background-image: url(asset/banner/banner_1.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

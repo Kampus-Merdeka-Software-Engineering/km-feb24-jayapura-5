@@ -72,7 +72,6 @@ a:hover {
     /* Menggunakan 100vh untuk ketinggian agar sesuai dengan tinggi layar */
     overflow: hidden;
     position: relative;
-    background-image: url(asset/banner/banner_1.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -306,11 +305,15 @@ p {
 .kartu-team {
     width: 20%;
     margin: 0 auto;
+    position: relative;
+    overflow: hidden;
 }
 
 .kartu-team img {
     width: 80%;
     border-radius: 50%;
+    display: block;
+    margin: 0 auto;
 }
 
 .kartu-team h3 {
@@ -330,6 +333,32 @@ p {
     text-align: center;
     color: #d2b356;
 }
+
+.kartu-team .middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.kartu-team:hover .middle {
+    opacity: 1;
+}
+
+.kartu-team .text {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.kartu-team .text a {
+    color: #fff; /* White color for the icon */
+    font-size: 24px; /* Adjust icon size */
+    text-decoration: none;
+}
+
 
 .collab-list {
     width: 100%;
