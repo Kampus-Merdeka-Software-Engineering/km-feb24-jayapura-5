@@ -183,17 +183,17 @@ form.addEventListener('submit', (e) => {
 showInfo();
 
 logoutButton.addEventListener('click', () => {
-    // Remove logged in status from localStorage
+    /* Remove logged in status from localStorage */
     localStorage.removeItem('loggedIn');
-    // Redirect to login page
+    /* Redirect to login page */
     window.location.href = '/pages/login/login.html';
 });
 
-// Check if user is logged in when page loads
+/* Check if user is logged in when page loads */
 const loggedIn = localStorage.getItem('loggedIn');
 const currentPage = window.location.pathname;
 
 if (!loggedIn && currentPage.includes('/pages/form/form_admin.html')) {
-    // If user is not logged in and tries to access admin page, redirect to login
+    /* If user is not logged in and tries to access admin page, redirect to login */
     window.location.href = '/pages/login/login.html';
 }
