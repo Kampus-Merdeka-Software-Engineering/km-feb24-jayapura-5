@@ -26,7 +26,7 @@
             <div class="col-12">
                 <button class="btn btn-primary newUser" data-bs-toggle="modal" data-bs-target="#userForm">New User <i
                         class="bi bi-people"></i></button>
-                <button><a href="/index.html"><i class="bi bi-power"></i></a></button>
+                <button id="logoutButton" class="logout">Logout</button>
             </div>
         </div>
         <div class="row mt-3">
@@ -56,7 +56,7 @@
                             <th>City</th>
                             <th>Email</th>
                             <th>Phone</th>
-                            <th>Komentar</th>
+                            <th>Suggestion</th>
                             <th>Post Date</th>
                             <th>Action</th>
                         </tr>
@@ -106,7 +106,7 @@
                                 <input type="number" name="" id="phone" minlength="11" maxlength="12" required>
                             </div>
                             <div>
-                                <label for="komentar">Komentar:</label>
+                                <label for="komentar">Suggestion:</label>
                                 <input type="text" name="" id="komentar" required>
                             </div>
                             <div>
@@ -159,7 +159,7 @@
                                 <input type="text" name="" id="showPhone" minlength="11" maxlength="11" disabled>
                             </div>
                             <div>
-                                <label for="komentar">Komentar:</label>
+                                <label for="komentar">Suggestion:</label>
                                 <input type="text" name="" id="showKomentar" disabled>
                             </div>
                             <div>

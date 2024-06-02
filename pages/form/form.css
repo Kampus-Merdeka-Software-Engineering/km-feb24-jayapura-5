@@ -163,6 +163,11 @@ h3 {
     background-image: url("/asset/footer.jpg");
 }
 
+.logout {
+    text-decoration: none;
+}
+
+
 
 /* Untuk tampilan mobile */
 @media only screen and (max-width: 600px) {
