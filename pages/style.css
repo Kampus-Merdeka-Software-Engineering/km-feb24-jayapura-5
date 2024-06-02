@@ -438,41 +438,6 @@ h3 {
     background-image: url("/asset/footer.jpg");
 }
 
-.container {
-    width: 500px;
-    border: 1px solid #ccc;
-    padding: 30px;
-    border-radius: 20px;
-}
-
-.form-group {
-    margin: 20px;
-    padding: 0;
-    gap: 20px;
-}
-
-label {
-    display: block;
-    margin-bottom: 5px;
-    font-size: 15px;
-    font-weight: 600;
-}
-
-input[type="text"],
-input[type="email"],
-textarea {
-    width: calc(100% - 22px);
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 14px;
-    box-sizing: border-box;
-}
-
-textarea {
-    height: 100px;
-}
-
 button {
     background-color: #535353;
     color: white;

@@ -44,23 +44,23 @@ document.addEventListener('DOMContentLoaded', () => {
         const email = loginForm.querySelector('input[type="email"]').value;
         const password = loginForm.querySelector('input[type="password"]').value;
 
-        // Check if email and password match admin credentials
+        /* Check if email and password match admin credentials */
         if (email === 'admin@gmail.com' && password === 'admin123') {
-            // Set logged in status to localStorage
+            /* Set logged in status to localStorage */
             localStorage.setItem('loggedIn', true);
-            // Redirect to admin page
+            /* Redirect to admin page */
             window.location.href = '/pages/form/form_admin.html';
         } else {
             alert('Invalid email or password. Please try again.');
         }
     });
 
-    // Check if user is logged in when page loads
+    /* Check if user is logged in when page loads */
     const loggedIn = localStorage.getItem('loggedIn');
     const currentPage = window.location.pathname;
 
     if (!loggedIn && currentPage.includes('/pages/form/form_admin.html')) {
-        // If user is not logged in and tries to access admin page, redirect to login
+        /* If user is not logged in and tries to access admin page, redirect to login */
         window.location.href = '/login.html';
     }
 });
