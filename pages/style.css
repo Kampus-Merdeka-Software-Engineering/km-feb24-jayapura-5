@@ -104,7 +104,6 @@ a:hover {
 }
 
 @keyframes change {
-
     0%, 20% {
         background-image: url(/asset/banner/banner_1.jpg);
     }
@@ -137,7 +136,6 @@ a:hover {
         background-image: url(/asset/banner/banner_1.jpg);
     }
 }
-
 
 .content .deskripsi {
     font-size: 20px;
