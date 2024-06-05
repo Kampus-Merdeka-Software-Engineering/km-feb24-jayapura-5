@@ -110,8 +110,18 @@ function createChart(data) {
             datasets: [{
                 label: 'Total Profit',
                 data: profits,
-                backgroundColor: 'rgba(255, 99, 132, 0.2)',
-                borderColor: 'rgba(255, 99, 132, 1)',
+                backgroundColor: [
+                    '#86C6F4', // Biru Pastel
+                    '#77DD77', // Hijau Pastel
+                    '#FFB347', // Kuning Pastel
+                    '#CFCFC4'  // Abu-abu
+                ],
+                borderColor: [
+                    '#86C6F4', // Biru Pastel
+                    '#77DD77', // Hijau Pastel
+                    '#FFB347', // Kuning Pastel
+                    '#CFCFC4'  // Abu-abu
+                ],
                 borderWidth: 1
             }]
         },
@@ -140,15 +150,15 @@ function drawTrendPenjualan(data) {
             datasets: [{
                 label: 'Total Profit',
                 data: totalProfitData,
-                borderColor: 'rgba(255, 99, 132, 1)',
-                borderWidth: 2,
+                borderColor:   '#86C6F4', // Biru
+                borderWidth: 3,
                 fill: false
             },
             {
                 label: 'Total Order',
                 data: totalOrderData,
-                borderColor: 'rgba(54, 162, 235, 1)',
-                borderWidth: 2,
+                borderColor: '#77DD77', // Hijau',
+                borderWidth: 3,
                 fill: false
             }]
         },
@@ -162,21 +172,26 @@ function drawTrendPenjualan(data) {
     });
 }
 
-
 function drawRankedProductByProfitChart(data) {
-    /*Mendapatkan canvas element*/
-    var canvas = document.getElementById('chartRankedProductByProfit');
-    var ctx = canvas.getContext('2d');
+    // Mengurutkan data berdasarkan total profit dalam urutan menurun
+    data.sort((a, b) => b.total_profit - a.total_profit);
 
-    /* Mendefinisikan data yang akan digunakan dalam chart */
-    var products = data.map(function (item) {
+    // Mengambil 10 data teratas
+    var top10Data = data.slice(0, 10);
+
+    // Mendapatkan nama produk dan profit dari 10 data teratas
+    var products = top10Data.map(function (item) {
         return item.Product;
     });
-    var profits = data.map(function (item) {
+    var profits = top10Data.map(function (item) {
         return parseInt(item.total_profit);
     });
 
-    /* Membuat chart */
+    // Mendapatkan canvas element
+    var canvas = document.getElementById('chartRankedProductByProfit');
+    var ctx = canvas.getContext('2d');
+
+    // Membuat chart
     var chart = new Chart(ctx, {
         type: 'bar',
         data: {
@@ -184,8 +199,8 @@ function drawRankedProductByProfitChart(data) {
             datasets: [{
                 label: 'Total Profit',
                 data: profits,
-                backgroundColor: 'rgba(54, 162, 235, 0.6)',
-                borderColor: 'rgba(54, 162, 235, 1)',
+                backgroundColor: '#CFCFC4',  // Abu-abu
+                borderColor: '#CFCFC4',  // Abu-abu
                 borderWidth: 1
             }]
         },
@@ -200,10 +215,12 @@ function drawRankedProductByProfitChart(data) {
         }
     });
 }
+
 function drawAverageProfitByCategoryChart(data) {
     /* Mendapatkan canvas element */
     var canvas = document.getElementById('chartRerata');
     var ctx = canvas.getContext('2d');
+    
     /* Mendefinisikan data yang akan digunakan dalam chart */
     var categories = data.map(function (item) {
         return item.Product_Category;
@@ -221,22 +238,14 @@ function drawAverageProfitByCategoryChart(data) {
                 label: 'Average Profit',
                 data: averages,
                 backgroundColor: [
-                    'rgba(255, 99, 132, 0.6)',
-                    'rgba(54, 162, 235, 0.6)',
-                    'rgba(255, 206, 86, 0.6)',
-                    'rgba(75, 192, 192, 0.6)',
-                    'rgba(153, 102, 255, 0.6)',
-                    'rgba(255, 159, 64, 0.6)',
-                    'rgba(255, 99, 132, 0.6)'
+                    '#86C6F4', // Biru Pastel
+                    '#77DD77', // Hijau Pastel
+                    '#FFB347', // Kuning Pastel
                 ],
                 borderColor: [
-                    'rgba(255, 99, 132, 1)',
-                    'rgba(54, 162, 235, 1)',
-                    'rgba(255, 206, 86, 1)',
-                    'rgba(75, 192, 192, 1)',
-                    'rgba(153, 102, 255, 1)',
-                    'rgba(255, 159, 64, 1)',
-                    'rgba(255, 99, 132, 1)'
+                    '#86C6F4',
+                    '#77DD77',
+                    '#FFB347',
                 ],
                 borderWidth: 1
             }]
@@ -269,7 +278,11 @@ function drawTotalProfitPerYearChart(data) {
     var datasets = {};
 
     /* Array warna yang akan digunakan */
-    var colors = ['rgba(54, 162, 235, 0.6)', 'rgba(255, 99, 132, 0.6)', 'rgba(255, 206, 86, 0.6)'];
+    var colors = [
+        '#86C6F4', // Biru Pastel
+        '#77DD77', // Hijau Pastel
+        '#FFB347', // Kuning Pastel
+    ];
 
     /* Mengelompokkan data profit per tahun berdasarkan kategori produk */
     data.forEach((item, index) => {
@@ -327,7 +340,11 @@ function drawTotalProfitPerAgeChart(data) {
     var datasets = {};
 
     /* Mengelompokkan data profit per kelompok usia berdasarkan kategori produk*/
-    var colors = ['rgba(54, 162, 235, 0.6)', 'rgba(255, 99, 132, 0.6)', 'rgba(255, 206, 86, 0.6)']; /* Warna-warna yang akan digunakan */
+    var colors = [
+        '#86C6F4', // Biru Pastel
+        '#77DD77', // Hijau Pastel
+        '#FFB347', // Kuning Pastel
+        ]; /* Warna-warna yang akan digunakan */
     data.forEach((item, index) => {
         if (!datasets[item.Product_Category]) {
             const colorIndex = Object.keys(datasets).length % colors.length; /* Mendapatkan indeks warna */
