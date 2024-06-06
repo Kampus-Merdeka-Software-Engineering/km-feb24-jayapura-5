@@ -152,14 +152,16 @@ function drawTrendPenjualan(data) {
                 data: totalProfitData,
                 borderColor:   '#86C6F4', // Biru
                 borderWidth: 3,
-                fill: false
+                fill: false,
+                tension: 0.4,
             },
             {
                 label: 'Total Order',
                 data: totalOrderData,
                 borderColor: '#77DD77', // Hijau',
                 borderWidth: 3,
-                fill: false
+                fill: false,
+                tension: 0.4,
             }]
         },
         options: {
