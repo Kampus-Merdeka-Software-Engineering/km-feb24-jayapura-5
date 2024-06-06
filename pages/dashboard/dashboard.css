@@ -356,6 +356,13 @@ hr {
     color: #2c2c2c;
 }
 
+.chart-item canvas {
+    width: 100% !important;
+    height: 300px !important;
+    max-width: auto; 
+    max-height: 300px; 
+}
+
 /* Media Screen */
 @media (max-width: 984px) {
     .checkbtn {
